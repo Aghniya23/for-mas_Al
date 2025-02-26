@@ -113,14 +113,14 @@
 
     async function inipesan() {
       var {value: nama} = await swals.fire({
-        title: 'Masukin nama mas ...', input: 'text',
+        title: 'Masukin nama panggilan kesayangan "mas ..."', input: 'text',
       });
       if (nama && nama.length < 3) {
         window.nama = nama;
         vketikhalo = "Hai,mas " + nama + " ✨";
         mulainama();
       } else {
-        await swals.fire('Ups!', 'ketik "al"!'); inipesan();
+        await swals.fire('Ups!', 'ketik "al"! panggilan kesayangan ehe'); inipesan();
       }
     }
 
