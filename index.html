@@ -77,13 +77,13 @@
         <p id="pesan2">Tunggu...</p>
         <!-- Pesan -->
         <p id="pesan3">Ciee.. Ada mas mas yang lagi Ultah Nih 🤣❤️</p>
-        <p id="pesan4">Barakallah fii umrik masku, </p>
+        <p id="pesan4">Barakallah fii umrik mas  </p>
         <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-        <p id="pesan6" class="gaya2">Moga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆❤️</p>
-        <p id="pesan7" class="gaya2">Sehat selalu ya!, oh ya aku belum sempet nampol huhu</p>
+        <p id="pesan6" class="gaya2">Moga panjang umur biar bisa sukses bareng adek 😆❤️</p>
+        <p id="pesan7" class="gaya2">Sehat selalu ya!, oh ya maadin adek suka banget nyubit mamas huhu, mamas gemeshin siii</p>
 
         <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-        <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini, mas dapat menjadi pribadi yang lebih baik
+        <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesial ini, mamas dapat menjadi pribadi yang lebih baik
           yaa.. 🥳❤️</p>
         <p id="pesan10" class="gaya2">Jangan pernah menyerah di keadaan apapun ya mass 🥳</p>
 
@@ -113,14 +113,14 @@
 
     async function inipesan() {
       var {value: nama} = await swals.fire({
-        title: 'Masukin Nama mas', input: 'text',
+        title: 'Masukin nama mas ...', input: 'text',
       });
-      if (nama && nama.length < 11) {
+      if (nama && nama.length < 3) {
         window.nama = nama;
         vketikhalo = "Hai,mas " + nama + " ✨";
         mulainama();
       } else {
-        await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!'); inipesan();
+        await swals.fire('Ups!', 'ketik "al"!'); inipesan();
       }
     }
 
